@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(to right, #381958 0%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(
+      to bottom,
+      #000000 0%,
+      #050207 28%,
+      #0f0717 65%,
+      #381958 100%
+    );
+}
