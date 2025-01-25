@@ -6,6 +6,10 @@
   .gradient-bg {
       background: linear-gradient(to bottom, #0F0717 , #381958);
   }
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
 
