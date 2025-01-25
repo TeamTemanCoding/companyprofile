@@ -80,9 +80,9 @@ export const Card = ({
         rotateX: rotate,
         scale,
       }}
-      className="max-w-5xl  mx-auto h-[40rem] w-full p-1 rounded-[30px]"
+      className="max-w-5xl  mx-auto h-[40rem] max-sm:h-[20rem] w-full p-1 rounded-[30px]"
     >
-      <div className="flex space-x-5 pl-10">
+      <div className="flex space-x-5 max-sm:hidden pl-10">
         <div className="w-20 h-1 bg-[#6C6C6C] rounded-t-full"></div>
         <div className="w-10 h-1 bg-[#6C6C6C] rounded-t-full"></div>
       </div>
