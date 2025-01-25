@@ -5,7 +5,7 @@ import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 
 const PoppinsSans = Poppins({
-  weight: ['400', '600', '700'], 
+  weight: ['100', '200', '300', '400', '500' , '600', '700', '800', '900'], 
   subsets: ['latin'], 
   display: 'swap', 
   variable: '--font-poppins', 
