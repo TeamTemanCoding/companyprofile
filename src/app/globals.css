@@ -26,4 +26,5 @@ body {
       #381958 100%
     );
     font-family: var(--font-poppins), sans-serif;
+  scroll-behavior: smooth;
 }

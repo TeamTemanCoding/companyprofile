@@ -35,10 +35,10 @@ export default function Hero() {
                 Build Your Dream Website Starting Today
               </h1>
               <p className="text-[#858585] pt-2 max-sm:text-xs">
-                "We are Here to Bring Your Ideas to Life"
+              &rdquo;We are Here to Bring Your Ideas to Life&rdquo;
               </p>
               <a
-                href=""
+                href="https://linktr.ee/temancoding.com" target="_blank"
                 className="mt-4 inline-block max-sm:text-xs shadow-md shadow-black hover:shadow-sm bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700"
               >
                 Get Started
