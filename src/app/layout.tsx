@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const PoppinsSans = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -81,6 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${PoppinsSans.variable} antialiased`}>
+      <Analytics />
+      <SpeedInsights/>
         <Navbar />
         {children}
         <Footer />
