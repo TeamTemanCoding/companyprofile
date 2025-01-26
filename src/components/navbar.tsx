@@ -65,8 +65,8 @@ export default function Nav() {
     <div className="bg-black/5 backdrop-blur-md flex flex-row w-screen fixed z-50 justify-between items-center">
       {/* Logo */}
       <Image
-        width={50}
-        height={50}
+        width={80}
+        height={80}
         src="/logoTC.png"
         alt="Logo"
         className="ml-3"
