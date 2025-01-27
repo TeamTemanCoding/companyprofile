@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Footer(){
     return(
-        <div className="flex flex-row gap-4 text-white items-center mt-20">
+        <div className="flex flex-row gap-4 text-white items-center my-32">
             <div className="">
                 <Image width={200} height={200} src="/logoTC.png" alt=""></Image>
             </div>
@@ -21,11 +21,11 @@ export default function Footer(){
             <div className="ml-[35px]">
                 <span className=" font-bold text-2xl">Services</span>
                 <div className="flex flex-col mt-5 gap-1">
-                    <a href="" className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Custom website creation services</a>
-                    <a href="" className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">E-Commerce web creation services</a>
-                    <a href="" className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">UI/UX Design</a>
-                    <a href="" className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Landing page creation services</a>
-                    <a href="" className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Mobile-Friendly Website Creation</a>
+                    <span className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Custom website creation services</span>
+                    <span className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">E-Commerce web creation services</span>
+                    <span className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">UI/UX Design</span>
+                    <span className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Landing page creation services</span>
+                    <span className="transition-all duration-200 ease-in hover:text-purple-600 hover:scale-105">Mobile-Friendly Website Creation</span>
                 </div>
             </div>
             <div className=" ml-[35px]">
