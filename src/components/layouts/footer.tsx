@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer id="Contact" className="flex flex-row max-sm:flex-col max-sm:space-y-10 text-white items-start mt-20 p-4">
+    <footer id="Contact" className="container mx-auto flex flex-row max-sm:flex-col max-sm:space-y-10 text-white items-start mt-20 p-4">
 
       <div className="w-full sm:w-auto flex justify-center sm:justify-start">
         <Image
