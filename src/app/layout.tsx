@@ -1,19 +1,17 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const PoppinsSans = Poppins({
+const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata & { themeColor?: string } = {
   title: "Teman Coding",
   icons: {
     icon: "/Icon.png",
@@ -56,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TemanCoding",
     description: "Kami membuat situs web dan aplikasi web kustom menggunakan teknologi modern seperti Next.js dan React. Solusi kami dirancang untuk ramah pengguna, cepat, dan dioptimalkan untuk SEO.",
-    url: "https://temancoding.vercel.app/", 
+    url: "https://temancoding.vercel.app/",
     siteName: "Teman Coding",
     images: [
       {
@@ -69,11 +67,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  themeColor: "#000000"
 };
 
 export const viewport = "width=device-width, initial-scale=1.0";
-
-export const themeColor = "#000000";
 
 export default function RootLayout({
   children,
@@ -82,12 +79,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${PoppinsSans.variable} antialiased`}>
-      <Analytics />
-      <SpeedInsights/>
-        <Navbar />
+      <body className={`${poppins.variable} antialiased`}>
+        <Analytics />
+        <SpeedInsights />
         {children}
-        <Footer />
       </body>
     </html>
   );

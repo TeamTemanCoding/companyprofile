@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ContainerScroll } from "../components/ui/hero";
+import { ContainerScroll } from "../ui/hero";
 import Image from "next/image";
 
 export default function Hero() {
@@ -22,10 +22,10 @@ export default function Hero() {
           </div>
         }
       >
-        <div className="w-full h-screen max-sm:h-auto flex flex-col">
+        <div className="w-full h-[600px] max-sm:h-auto flex flex-col">
           <div className="px-5 max-sm:px-1 py-2 fixed">
             <div className="justify-self-start self-start">
-                <Image src="/logoTC.png" alt="logo" width={50} height={80}/>
+              <Image src="/logoTC.png" alt="logo" width={50} height={80} />
             </div>
           </div>
 
@@ -35,7 +35,7 @@ export default function Hero() {
                 Build Your Dream Website Starting Today
               </h1>
               <p className="text-[#858585] pt-2 max-sm:text-xs">
-              &rdquo;We are Here to Bring Your Ideas to Life&rdquo;
+                &rdquo;We are Here to Bring Your Ideas to Life&rdquo;
               </p>
               <a
                 href="https://linktr.ee/temancoding.com" target="_blank"
